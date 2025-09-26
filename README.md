@@ -5,9 +5,11 @@ This repository contains multiple React projects for learning and experimenting 
 ## 🚀 Projects Overview
 
 ### Current Projects
+
 - **my-react-app** - Basic React setup with Tailwind CSS v4, component basics, and prop-types
 
 ### Planned Projects
+
 - **react-router-app** - Navigation and routing
 - **state-management-app** - Redux, Context API, Zustand
 - **api-integration-app** - REST APIs, GraphQL, data fetching
@@ -36,17 +38,20 @@ React/
 ## 🚀 Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/inversemaha/react-learning-v1.0.0.git
    cd react-learning-v1.0.0
    ```
 
 2. **Navigate to a project**
+
    ```bash
    cd my-react-app
    ```
 
 3. **Install dependencies**
+
    ```bash
    npm install
    ```
@@ -71,6 +76,7 @@ React/
 ## 🔧 Development Setup
 
 Each project includes:
+
 - **Hot Module Replacement (HMR)** for fast development
 - **ESLint** configuration for code quality
 - **Prettier** for consistent formatting
@@ -81,4 +87,14 @@ Each project includes:
 
 This is a learning repository documenting the journey of mastering React. Each project builds upon previous concepts while introducing new ones.
 
-For detailed project structure and planning, see [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md).
+## 🙏 Credits & Acknowledgments
+
+Special thanks to **Tapas Da** and the **TapasScript Bangla** tutorial series for excellent React guidance and mentorship.
+
+**Learning Resources:**
+
+- 📺 [TapasScript Bangla - React Tutorial](https://www.youtube.com/watch?v=Byy41AxCK88)
+- 👨‍🏫 **Mentor**: Tapas Da
+- 🌟 Channel: TapasScript Bangla
+
+_Grateful for the clear explanations and practical approach to React learning!_ 🚀
