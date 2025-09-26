@@ -11,6 +11,8 @@ React/
 │   └── settings.json
 ├── README.md              # Main repository README
 ├── PROJECT_STRUCTURE.md   # This file
+├── docs/                  # Learning documentation
+│   └── LEARNING_NOTES.md  # Learning journey notes
 ├── my-react-app/          # Project 1: Basic React app
 │   ├── src/
 │   ├── public/
@@ -37,7 +39,7 @@ React/
 ## Git Strategy
 
 - **Single Repository**: All projects are in one repository for easy management
-- **Branch Strategy**: 
+- **Branch Strategy**:
   - `main` - Production-ready code
   - `learning/v1.0.x` - Learning iterations
   - `feature/project-name` - Individual project features
@@ -67,7 +69,8 @@ git push origin main
 ## VS Code Workspace
 
 The `.vscode/settings.json` contains shared settings for:
+
 - Prettier formatting
-- ESLint configuration  
+- ESLint configuration
 - Tailwind CSS support
 - React snippets
