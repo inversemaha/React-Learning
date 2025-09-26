@@ -1,16 +1,84 @@
-# React + Vite
+# React Learning Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains multiple React projects for learning and experimenting with different React concepts and technologies.
 
-Currently, two official plugins are available:
+## 🚀 Projects Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Current Projects
+- **my-react-app** - Basic React setup with Tailwind CSS v4, component basics, and prop-types
 
-## React Compiler
+### Planned Projects
+- **react-router-app** - Navigation and routing
+- **state-management-app** - Redux, Context API, Zustand
+- **api-integration-app** - REST APIs, GraphQL, data fetching
+- **full-stack-app** - Complete application with backend
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+- **React 19** - Latest React version
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS v4** - Utility-first styling
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+- **Lucide React** - Icon library
+- **PropTypes** - Runtime type checking
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Repository Structure
+
+```
+React/
+├── .vscode/settings.json    # Shared VS Code configuration
+├── my-react-app/           # Current learning project
+├── future-projects/        # Additional projects will be added here
+└── docs/                   # Learning notes and documentation
+```
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/inversemaha/react-learning-v1.0.0.git
+   cd react-learning-v1.0.0
+   ```
+
+2. **Navigate to a project**
+   ```bash
+   cd my-react-app
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+## 📚 Learning Progress
+
+- ✅ React component creation and exports
+- ✅ Props and PropTypes
+- ✅ Tailwind CSS v4 setup
+- ✅ Git workflow with branches
+- ✅ VS Code configuration optimization
+- 🔄 Component composition and data flow
+- ⏳ State management
+- ⏳ Event handling
+- ⏳ API integration
+
+## 🔧 Development Setup
+
+Each project includes:
+- **Hot Module Replacement (HMR)** for fast development
+- **ESLint** configuration for code quality
+- **Prettier** for consistent formatting
+- **Tailwind CSS** for styling
+- **Proper .gitignore** for clean repository
+
+## 📝 Notes
+
+This is a learning repository documenting the journey of mastering React. Each project builds upon previous concepts while introducing new ones.
+
+For detailed project structure and planning, see [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md).
