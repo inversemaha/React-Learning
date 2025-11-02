@@ -47,12 +47,22 @@ function ScriptCar() {
       isPremium: true,
     },
   ];
-  const [searchTerm, setSearchTerm] = useState();
+  const [searchTerm, setSearchTerm] = useState("");
+  const [showPremiumOnly, setShowPremiumOnly] = useState(false);
   return (
     <div className="mx-auto p-4">
       <Header />
-      <Search searchTerm={searchTerm} onSearchCar={setSearchTerm} />
-      <CarList searchTerm={searchTerm} cars={CarsData} />
+      <Search
+        searchTerm={searchTerm}
+        onSearchCar={setSearchTerm}
+        showPremiumOnly={showPremiumOnly}
+        onShowPremiumOnly={setShowPremiumOnly}
+      />
+      <CarList
+        searchTerm={searchTerm}
+        cars={CarsData}
+        showPremiumOnly={showPremiumOnly}
+      />
     </div>
   );
 }
