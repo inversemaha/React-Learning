@@ -1,61 +1,25 @@
+import PropTypes from "prop-types";
 import CarRow from "./CarRow";
 
-const CarsData = [
-  {
-    id: 1,
-    title: "Luxury Sedan",
-    brand: "Mercedes",
-    year: 2023,
-    price: 80000,
-    isPremium: true,
-  },
-  {
-    id: 2,
-    title: "Family SUV",
-    brand: "Toyota",
-    year: 2022,
-    price: 45000,
-    isPremium: false,
-  },
-  {
-    id: 3,
-    title: "Sports Car",
-    brand: "Porsche",
-    year: 2023,
-    price: 120000,
-    isPremium: true,
-  },
-  {
-    id: 4,
-    title: "Electric Hatchback",
-    brand: "Nissan",
-    year: 2022,
-    price: 35000,
-    isPremium: false,
-  },
-  {
-    id: 5,
-    title: "Luxury SUV",
-    brand: "BMW",
-    year: 2023,
-    price: 90000,
-    isPremium: true,
-  },
-];
-
-function CarList() {
+function CarList({ searchTerm, cars }) {
+  const rows = [];
+  cars.forEach((car) => {
+    if (car.title.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1) {
+      return;
+    }
+    rows.push(<CarRow key={car.id} car={car} />);
+  });
   return (
     <div className="grid grid-cols-3 gap-4">
-      {CarsData.map((carData) => (
-        <div
-          key={carData.id}
-          className="bg-white shadow rounded-lg p-4 border hover:shadow-lg transition-shadow"
-        >
-          <CarRow carData={carData} />
-        </div>
-      ))}
+      <div className="bg-white shadow rounded-lg p-4 border hover:shadow-lg transition-shadow">
+        {rows}
+      </div>
     </div>
   );
 }
+CarList.propTypes = {
+  searchTerm: PropTypes.string.isRequired,
+  cars: PropTypes.array.isRequired,
+};
 
 export default CarList;

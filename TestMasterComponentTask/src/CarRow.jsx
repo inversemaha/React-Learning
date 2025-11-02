@@ -2,16 +2,16 @@ import CarTitle from "./CarTitle";
 import CarDetails from "./CarDetails";
 import PropsType from "prop-types";
 
-function CarRow({ carData }) {
+function CarRow({ car }) {
   return (
     <>
-      <CarTitle title={carData.title} />
-      <CarDetails carData={carData} />
+      <CarTitle title={car.title} />
+      <CarDetails car={car} />
     </>
   );
 }
 CarRow.propTypes = {
-  carData: PropsType.shape({
+  car: PropsType.shape({
     title: PropsType.string.isRequired,
     brand: PropsType.string.isRequired,
     year: PropsType.number.isRequired,

@@ -1,12 +1,18 @@
-function Search() {
+import PropTypes from "prop-types";
+
+function Search({ searchTerm, onSearchCar }) {
   return (
     <div className="flex gap-4 mb-4 w-full">
       <div className="w-[30%] mt-2">
-        <input
-          type="text"
-          placeholder="Search for books..."
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-        />
+        <form>
+          <input
+            type="text"
+            value={searchTerm}
+            placeholder="Search for books..."
+            onChange={(event) => onSearchCar(event.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+        </form>
       </div>
 
       <div className="w-[15%] flex items-center">
@@ -23,5 +29,9 @@ function Search() {
     </div>
   );
 }
+Search.propTypes = {
+  searchTerm: PropTypes.string.isRequired,
+  onSearchCar: PropTypes.func.isRequired,
+};
 
 export default Search;
